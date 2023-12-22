@@ -15,21 +15,31 @@ Experimental Study of SGD and Momentum SGD
 + 朱：[3]
 
 ## 实验结果
-设$\gamma_s$为标准SGD的学习率，$gamma_m$为Momentum SGD的学习率，$\beta$为动量系数。我们取$\gamma_s$满足
+设 $\gamma_s$ 为标准SGD的学习率， $\gamma_m$ 为Momentum SGD的学习率， $\beta$ 为动量系数。我们取 $\gamma_s$ 满足
 
 $$
     \gamma_s = \frac{\gamma_m}{1 - \beta}
 $$
+
 以下报告各种batch_size、$\gamma_m$、$\beta$设定下，SGD与Momentum SGD的对比结果。
 ### MNIST数据集上训练LeNet神经网络
 #### 变化学习率
-+ batch_size=64, $\gamma_m=0.001$, $\beta=0.9$
-![Training Loss](result/Loss_batch_64_lr_0.0010_momentum_0.9000.png)
-![Test Accuracy](./result/Accuracy_batch_64_lr_0.0010_momentum_0.9000.png)
-+ batch_size=64, $\gamma_m=0.005$, $\beta=0.9$
-![Training Loss](result/Loss_batch_64_lr_0.0050_momentum_0.9000.png)
-![Test Accuracy](./result/Accuracy_batch_64_lr_0.0050_momentum_0.9000.png)
-+ batch_size=64, $\gamma_m=0.01$, $\beta=0.9$
-![Traning Loss](result/Accuracy_batch_64_lr_0.0100_momentum_0.9000.png)
-![Test Accuracy](./result/Accuracy_batch_64_lr_0.0100_momentum_0.9000.png)
+batch_size=64, $\gamma_m=0.001$, $\beta=0.9$
+
+<img src="result/LeNet/Loss_batch_64_lr_0.0010_momentum_0.9000.png" alt="Training Loss" style="width: 50%; height: auto;">
+<img src="result/LeNet/Accuracy_batch_64_lr_0.0010_momentum_0.9000.png" alt="Test Accuracy" style="width: 50%; height: auto;">
+
+
+batch_size=64, $\gamma_m=0.005$, $\beta=0.9$
+
+<img src="result/LeNet/Loss_batch_64_lr_0.0050_momentum_0.9000.png" alt="Training Loss" style="width: 50%; height: auto;">
+<img src="result/LeNet/Accuracy_batch_64_lr_0.0050_momentum_0.9000.png" alt="Test Accuracy" style="width: 50%; height: auto;">
+
+
+batch_size=64, $\gamma_m=0.01$, $\beta=0.9$
+
+<img src="result/LeNet/Loss_batch_64_lr_0.0100_momentum_0.9000.png" alt="Training Loss" style="width: 50%; height: auto;">
+<img src="result/LeNet/Accuracy_batch_64_lr_0.0100_momentum_0.9000.png" alt="Test Accuracy" style="width: 50%; height: auto;">
+
+
 #### 变化batch_size
