@@ -62,17 +62,21 @@ batch_size=64, $\gamma_m=0.1$, $\beta=0.9$
 batch越小，Loss抖动的越厉害。batch越大，Loss越平稳。大batch有助于减小方差。SGD收敛速率的第二项好像有这个东西 $\sqrt{\frac{\sigma}{B}}$ 。
 
 batch_size=8, $\gamma_m=0.01$, $\beta=0.9$
+
 <img src="result/LeNet/Loss_Over_Samples_batch_8_lr_0.0100_momentum_0.9000.png" alt="Training Loss" style="width: 50%; height: auto;">
 <img src="result/LeNet/Accuracy_Over_Samples_batch_8_lr_0.0100_momentum_0.9000.png" alt="Test Accuracy" style="width: 50%; height: auto;">
 
 batch_size=16, $\gamma_m=0.01$, $\beta=0.9$
+
 <img src="result/LeNet/Loss_Over_Samples_batch_16_lr_0.0100_momentum_0.9000.png" alt="Training Loss" style="width: 50%; height: auto;">
 <img src="result/LeNet/Accuracy_Over_Samples_batch_16_lr_0.0100_momentum_0.9000.png" alt="Test Accuracy" style="width: 50%; height: auto;">
 
 batch_size=32, $\gamma_m=0.01$, $\beta=0.9$
+
 <img src="result/LeNet/Loss_Over_Samples_batch_32_lr_0.0100_momentum_0.9000.png" alt="Training Loss" style="width: 50%; height: auto;">
 <img src="result/LeNet/Accuracy_Over_Samples_batch_32_lr_0.0100_momentum_0.9000.png" alt="Test Accuracy" style="width: 50%; height: auto;">
 
 batch_size=64, $\gamma_m=0.01$, $\beta=0.9$
+
 <img src="result/LeNet/Loss_Over_Samples_batch_64_lr_0.0100_momentum_0.9000.png" alt="Training Loss" style="width: 50%; height: auto;">
 <img src="result/LeNet/Accuracy_Over_Samples_batch_64_lr_0.0100_momentum_0.9000.png" alt="Test Accuracy" style="width: 50%; height: auto;">
